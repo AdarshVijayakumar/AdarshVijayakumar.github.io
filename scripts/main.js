@@ -70,13 +70,147 @@ $("#prjModal").on("show.bs.modal", function (event) {
     // Configure source of frist image here
     modal.find("#img2").attr("src", "./images/gesture2.png");
 
+    modal.find("#img3Mask").addClass("mask")
+    modal.find("#img4Mask").addClass("mask")
+    modal.find("#img5Mask").addClass("mask")
+    modal.find("#vid1Mask").addClass("mask")
+
+    modal.find("#prjLink").attr("href", "https://github.com/AdarshVijayakumar/C---Gesture-Recognition-for-Interactive-Systems---using-Kinect-V2");
+
     //ToDo: Add more images here upto 5
   }
 
-  // else if (eventSrc.data("prjname") === "E-commerce"){
-  //
-  //
-  // }
+  else if (eventSrc.data("prjname") === "vending"){
+    let modal = $(this);
+    let img1Text = `This is the MDA EFSM state diagram which I've designed to implement the situation of 2 vending machines having their specific resposibilities of disposing various drinks with different additives. The final state diagram has 3 states: no cups, idle and coin inserted. The different meta events and the corresponding meta actions that can take place at different states are clearly shown in the state diagram. Next, this state diagram will be implemented in Java with 3 design patterns.`;
+    let img2Text = `The complete class diagram of the system including the 3 design patterns is shown here. VM1 and VM2 classes forms the input processor and it is connected to MDA EFSM MOdel which is based on State pattern. This MDA EFSM class is connected to the Output processor which is based on strategy pattern. The respective functionalities of VM1 & VM2 are managed by Abstract factory pattern. Detailed working of each design pattern is shown below. `;
+    let img3Text = 'The state pattern is a behavioural software design pattern that allows an object to alter its behaviour when its internal state changes, therefore we can say this is the solution to the problem of how to make behaviour depend on state. The answer to this can briefed as in below points: 1) Define a "context" class to present a single interface to the outside world. 2) Define a State abstract base class. 3) Represent the different "states" of the state machine as derived classes of the state base class. 4) Maintain a pointer to the current "state" in the "context" class. So here, different states in the state diagram are the different state classes grouped under the umbrella of 1 main abstract state class';
+    let img4Text = " The Strategy pattern is a behavioural software design pattern that enables selecting an algorithm at runtime. Instead of implementing a single algorithm directly, code recieves run-time instructions as to which in a family of algorithms to use. Here in our project we've used this pattern to implement the output processor. The different meta actions of 2 vending machines are grouped under the respective common parent class. ";
+    let img5Text = "The Abstract Factory Pattern provides a way to encapsulate a group of individual factories that have a common theme without specifying their concrete classes. In our system we have VM1 class and VM2 class that does the specific functions of vending machines 1 and 2 respectively. So we group these VM1 and VM2 classes under the parent Abstract Factory class.";
+    // Add a title to the modal
+    modal
+      .find("#prjModalLabel")
+      .text("Implementing the MDA EFSM state diagram in Java using: State, strategy and Abstract Factory Software Design Patterns");
+
+    // Add first image
+    modal.find("#img1Mask").removeClass("mask");
+    // Add image description here
+    modal.find("#imgDesc1").text(img1Text);
+    // Configure source of frist image here
+    modal.find("#img1").attr("src", "./images/mda.png");
+
+    // Add another image
+    modal.find("#img2Mask").removeClass("mask");
+    // Add image description here
+    modal.find("#imgDesc2").text(img2Text);
+    // Configure source of frist image here
+    modal.find("#img2").attr("src", "./images/classh.png");
+
+    // Add third image
+    modal.find("#img3Mask").removeClass("mask");
+    // Add image description here
+    modal.find("#imgDesc3").text(img3Text);
+    // Configure source of frist image here
+    modal.find("#img3").attr("src", "./images/state.png");
+
+    // Add third image
+    modal.find("#img4Mask").removeClass("mask");
+    // Add image description here
+    modal.find("#imgDesc4").text(img4Text);
+    // Configure source of frist image here
+    modal.find("#img4").attr("src", "./images/strategy.png");
+
+    // Add image
+    modal.find("#img5Mask").removeClass("mask");
+    // Add image description here
+    modal.find("#imgDesc5").text(img5Text);
+    // Configure source of frist image here
+    modal.find("#img5").attr("src", "./images/abstract.png");
+
+    modal.find("#vid1Mask").addClass("mask")
+    modal.find("#prjLink").attr("href", "https://github.com/AdarshVijayakumar/Design-and-Implementation-of-Vending-Machine-Components-using-MDA---EFSM");
+    //ToDo: Add more images here upto 5
+  }
+
+  else if (eventSrc.data("prjname") === "probe"){
+    let modal = $(this);
+    let img1Text = `The input files are the LinkData csv file and ProbePoints csv file which are too large and contain thousands of probe data collected from a particular area of Germany. The main python file to run is the MatchingProbeData.py. The output files are discussed below.`;
+    let img2Text = `When the main python file MatchingProbeData.py is run one intermediate file of matched points is created in csv format. This intermediate csv file which is shown here in the picture contains the probe points that were matched to the link data given in the input csv file.`;
+    let img3Text = 'This is the final output csv file. This will contain the slopes calculated for the points in intermediate file (which has points which were matched to link data input csv file).';
+    let img4Text = "This is the output in the console, when we run the main python file MatchingProbeData.py We can see here that the calculated slope and the surveyed slope are printed to the console output.";
+
+    // Add a title to the modal
+    modal
+      .find("#prjModalLabel")
+      .text("Probe Data Analysis for Road Slope - Details and Screenshots from the Project");
+
+    // Add first image
+    modal.find("#img1Mask").removeClass("mask");
+    // Add image description here
+    modal.find("#imgDesc1").text(img1Text);
+    // Configure source of frist image here
+    modal.find("#img1").attr("src", "./images/probe1.png");
+
+    // Add another image
+    modal.find("#img2Mask").removeClass("mask");
+    // Add image description here
+    modal.find("#imgDesc2").text(img2Text);
+    // Configure source of frist image here
+    modal.find("#img2").attr("src", "./images/probe2.png");
+
+    // Add third image
+    modal.find("#img3Mask").removeClass("mask");
+    // Add image description here
+    modal.find("#imgDesc3").text(img3Text);
+    // Configure source of frist image here
+    modal.find("#img3").attr("src", "./images/probe3.png");
+
+    // Add third image
+    modal.find("#img4Mask").removeClass("mask");
+    // Add image description here
+    modal.find("#imgDesc4").text(img4Text);
+    // Configure source of frist image here
+    modal.find("#img4").attr("src", "./images/probe4.png");
+
+    modal.find("#img5Mask").addClass("mask")
+    modal.find("#vid1Mask").addClass("mask")
+    modal.find("#prjLink").attr("href", "https://github.com/AdarshVijayakumar/Probe-Data-Analysis-for-Road-Slope");
+    //ToDo: Add more images here upto 5
+  }
+
+  else if (eventSrc.data("prjname") === "hired") {
+    let modal = $(this);
+    const vid1Text = `This is the complete demonstration of the project. All the features implemented in this project is listed below.`;
+    let img1Text = 'All the features implemented are listed here. And also instructions to deploy and run the project is shown here. Click the below link to go to the project code.';
+    const vid1Src = "https://www.youtube.com/embed/cjrPzpu7lz8"
+
+    modal
+      .find("#prjModalLabel")
+      .text("Social and Professional Networking Web Application - Project Demonstration");
+
+    // Add first image
+    modal.find("#img1Mask").removeClass("mask");
+    // Add image description here
+    modal.find("#imgDesc1").text(img1Text);
+    // Configure source of frist image here
+    modal.find("#img1").attr("src", "./images/hired1.png");
+
+
+    // Add first image
+    modal.find("#vid1Mask").removeClass("mask");
+    modal.find("#vid1").attr("src", vid1Src);
+    // Add image description here
+    modal.find("#vidDesc1").text(vid1Text);
+    // Configure source of frist image here
+
+    modal.find("#img2Mask").addClass("mask")
+    modal.find("#img3Mask").addClass("mask")
+    modal.find("#img4Mask").addClass("mask")
+    modal.find("#img5Mask").addClass("mask")
+
+    modal.find("#prjLink").attr("href", "https://github.com/AdarshVijayakumar/Social-and-Professional-Networking-Web-Application");
+    //ToDo: Add more images here upto 5
+  }
 
   //ToDo: Add an else if here to add contents of another project
 });
@@ -86,6 +220,12 @@ $("#imgModal").on("show.bs.modal", function (event, imgSrc) {
   let modal = $(this);
   modal.find("#imgFullscreen").attr("src", imgSrc);
 });
+
+$("#prjModal").on("hidden.bs.modal", function(event){
+  let modal = $(this);
+  modal.find("#vid1").attr("src", "");
+  // modal.find("#vid1").attr("src", "");
+})
 
 // Smooth scroll for links with hashes
 $("a.smooth-scroll").click(function (event) {
