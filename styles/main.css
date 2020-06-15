@@ -7837,6 +7837,28 @@ a.credit {
   z-index: 1000;
 }
 
-.cursor-pointer{
+.cursor-pointer {
   cursor: pointer;
+}
+
+.carousel-btn {
+  color: #363333;
+}
+
+.carousel-title {
+  color: #2b2828;
+}
+
+.carousel-inner {
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  background-color: #343a40;
+  text-align: -webkit-center;
+  text-align: -moz-center;
+  cursor: pointer;
+}
+
+.carousel-img {
+  max-width: 80% !important;
 }

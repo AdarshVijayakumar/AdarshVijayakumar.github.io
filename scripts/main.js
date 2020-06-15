@@ -70,6 +70,10 @@ $("#prjModal").on("show.bs.modal", function (event) {
     // Configure source of frist image here
     modal.find("#img2").attr("src", "./images/gesture2.png");
 
+    modal.find("#vid1Mask").addClass("mask")
+    modal.find("#vid2Mask").addClass("mask")
+    modal.find("#vid3Mask").addClass("mask")
+    modal.find("#vid4Mask").addClass("mask")
     modal.find("#img3Mask").addClass("mask")
     modal.find("#img4Mask").addClass("mask")
     modal.find("#img5Mask").addClass("mask")
@@ -128,6 +132,9 @@ $("#prjModal").on("show.bs.modal", function (event) {
     modal.find("#img5").attr("src", "./images/abstract.png");
 
     modal.find("#vid1Mask").addClass("mask")
+    modal.find("#vid2Mask").addClass("mask")
+    modal.find("#vid3Mask").addClass("mask")
+    modal.find("#vid4Mask").addClass("mask")
     modal.find("#prjLink").attr("href", "https://github.com/AdarshVijayakumar/Design-and-Implementation-of-Vending-Machine-Components-using-MDA---EFSM");
     //ToDo: Add more images here upto 5
   }
@@ -174,6 +181,9 @@ $("#prjModal").on("show.bs.modal", function (event) {
 
     modal.find("#img5Mask").addClass("mask")
     modal.find("#vid1Mask").addClass("mask")
+    modal.find("#vid2Mask").addClass("mask")
+    modal.find("#vid3Mask").addClass("mask")
+    modal.find("#vid4Mask").addClass("mask")
     modal.find("#prjLink").attr("href", "https://github.com/AdarshVijayakumar/Probe-Data-Analysis-for-Road-Slope");
     //ToDo: Add more images here upto 5
   }
@@ -203,12 +213,69 @@ $("#prjModal").on("show.bs.modal", function (event) {
     modal.find("#vidDesc1").text(vid1Text);
     // Configure source of frist image here
 
+    modal.find("#vid2Mask").addClass("mask")
+    modal.find("#vid3Mask").addClass("mask")
+    modal.find("#vid4Mask").addClass("mask")
     modal.find("#img2Mask").addClass("mask")
     modal.find("#img3Mask").addClass("mask")
     modal.find("#img4Mask").addClass("mask")
     modal.find("#img5Mask").addClass("mask")
 
     modal.find("#prjLink").attr("href", "https://github.com/AdarshVijayakumar/Social-and-Professional-Networking-Web-Application");
+    //ToDo: Add more images here upto 5
+  }
+
+  else if (eventSrc.data("prjname") === "bestdeal") {
+    let modal = $(this);
+    const vid1Text = `The intent is to build servlet-based web application that will allow customers to place orders online from BestDeal website. The store has a StoreManager, Customers, and Salesmen. The StoreManager can Add/Delete/Update products. Salesman can create Customer accounts and can
+Add/Delete/Update customers’ orders. Retailer offers warranty. The customer must be able to create an account online, place an order online, check the status of the order, or cancel the order. These features are demonstrated in this video. To see the code click see project below.`;
+    const vid2Text = `In this part, the Data Analytics link is added that is accessible only to the Store Manager. The Data Analytics link will allow the store manager to perform different analytical queries. Provide a Trending (Data Visualization) button that shows a Bar Chart for the total number of submitted reviews of every product for top 3 most liked products in every city.`;
+    const vid3Text = `In this the web application is extended for the online retailer to add the following features: 1) Inventory Report 2) Sales Report which are accessible only to the store manager.`;
+    const vid4Text = `In this part it is extended to add the two following features: 1) Deal Match Guarantee 2) Recommendation feature. The Recommendation feature: Based on the history of the user purchases and after the user makes a purchase, the enterprise web application shall make three product recommendations for the logged in user.`;
+    const vid1Src = "https://www.youtube.com/embed/cy-B3MeJR18"
+    const vid2Src = "https://www.youtube.com/embed/k-HLNPmybSc"
+    const vid3Src = "https://www.youtube.com/embed/dSCBvzehAWY"
+    const vid4Src = "https://www.youtube.com/embed/BQM1e0m2__8"
+
+    modal
+      .find("#prjModalLabel")
+      .text("E - Commerce Web Application: Best Deal. Project Demonstration");
+
+    // Add first image
+    modal.find("#vid1Mask").removeClass("mask");
+    modal.find("#vid1").attr("src", vid1Src);
+    // Add image description here
+    modal.find("#vidDesc1").text(vid1Text);
+    // Configure source of frist image here
+
+    // Add first image
+    modal.find("#vid2Mask").removeClass("mask");
+    modal.find("#vid2").attr("src", vid2Src);
+    // Add image description here
+    modal.find("#vidDesc2").text(vid2Text);
+    // Configure source of frist image here
+
+    // Add first image
+    modal.find("#vid3Mask").removeClass("mask");
+    modal.find("#vid3").attr("src", vid3Src);
+    // Add image description here
+    modal.find("#vidDesc3").text(vid3Text);
+    // Configure source of frist image here
+
+    // Add first image
+    modal.find("#vid4Mask").removeClass("mask");
+    modal.find("#vid4").attr("src", vid4Src);
+    // Add image description here
+    modal.find("#vidDesc4").text(vid4Text);
+    // Configure source of frist image here
+
+    modal.find("#img1Mask").addClass("mask")
+    modal.find("#img2Mask").addClass("mask")
+    modal.find("#img3Mask").addClass("mask")
+    modal.find("#img4Mask").addClass("mask")
+    modal.find("#img5Mask").addClass("mask")
+
+    modal.find("#prjLink").attr("href", "https://github.com/AdarshVijayakumar/E-Shopping-Online-Store-Web-Application");
     //ToDo: Add more images here upto 5
   }
 
