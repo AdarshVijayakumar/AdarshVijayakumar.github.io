@@ -1,11 +1,8 @@
-// Add your javascript here
-// Don't forget to add it into respective layouts where this js file is needed
 
 $(document).ready(function () {
   AOS.init({
-    // uncomment below for on-scroll animations to played only once
-    // once: true
-  }); // initialize animate on scroll library
+
+  });
 
   // This is to display image in full screen
   $("#img1").click(function (event) {
@@ -81,7 +78,7 @@ $("#prjModal").on("show.bs.modal", function (event) {
 
     modal.find("#prjLink").attr("href", "https://github.com/AdarshVijayakumar/C---Gesture-Recognition-for-Interactive-Systems---using-Kinect-V2");
 
-    //ToDo: Add more images here upto 5
+    
   }
 
   else if (eventSrc.data("prjname") === "vending"){
