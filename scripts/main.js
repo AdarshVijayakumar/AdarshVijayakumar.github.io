@@ -78,7 +78,7 @@ $("#prjModal").on("show.bs.modal", function (event) {
 
     modal.find("#prjLink").attr("href", "https://github.com/AdarshVijayakumar/C---Gesture-Recognition-for-Interactive-Systems---using-Kinect-V2");
 
-    
+
   }
 
   else if (eventSrc.data("prjname") === "vending"){
@@ -219,6 +219,36 @@ $("#prjModal").on("show.bs.modal", function (event) {
     modal.find("#img5Mask").addClass("mask")
 
     modal.find("#prjLink").attr("href", "https://github.com/AdarshVijayakumar/Social-and-Professional-Networking-Web-Application");
+    //ToDo: Add more images here upto 5
+  }
+
+  else if (eventSrc.data("prjname") === "employee") {
+    let modal = $(this);
+    const vid1Text = `This is the demonstration of my project Employee Tracker: A Java Spring MVC Web Application.`;
+
+    const vid1Src = "https://www.youtube.com/embed/ZRpwXXfvXIw"
+
+    modal
+      .find("#prjModalLabel")
+      .text("Employee Tracker: A Spring MVC Web Application - Project Demonstration");
+
+    // Add first image
+    modal.find("#vid1Mask").removeClass("mask");
+    modal.find("#vid1").attr("src", vid1Src);
+    // Add image description here
+    modal.find("#vidDesc1").text(vid1Text);
+    // Configure source of frist image here
+
+    modal.find("#img1Mask").addClass("mask")
+    modal.find("#vid2Mask").addClass("mask")
+    modal.find("#vid3Mask").addClass("mask")
+    modal.find("#vid4Mask").addClass("mask")
+    modal.find("#img2Mask").addClass("mask")
+    modal.find("#img3Mask").addClass("mask")
+    modal.find("#img4Mask").addClass("mask")
+    modal.find("#img5Mask").addClass("mask")
+
+    modal.find("#prjLink").attr("https://github.com/AdarshVijayakumar?tab=repositories");
     //ToDo: Add more images here upto 5
   }
 
