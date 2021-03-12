@@ -248,7 +248,7 @@ $("#prjModal").on("show.bs.modal", function (event) {
     modal.find("#img4Mask").addClass("mask")
     modal.find("#img5Mask").addClass("mask")
 
-    modal.find("#prjLink").attr("https://github.com/AdarshVijayakumar/Employee-Tracker-A-Java-Spring-MVC-Web-Application");
+    modal.find("#prjLink").attr("href", "https://github.com/AdarshVijayakumar/Employee-Tracker-A-Java-Spring-MVC-Web-Application");
     //ToDo: Add more images here upto 5
   }
 
